@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174D459F289977A3001AAC96 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */; };
 		175DFE9A2891B459006E4CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFE992891B459006E4CB5 /* AppDelegate.swift */; };
 		175DFE9C2891B459006E4CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFE9B2891B459006E4CB5 /* ViewController.swift */; };
 		175DFE9E2891B459006E4CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175DFE9D2891B459006E4CB5 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		175DFE962891B459006E4CB5 /* FeedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175DFE992891B459006E4CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175DFE9B2891B459006E4CB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174D459D28997782001AAC96 /* FeedAPI */ = {
+			isa = PBXGroup;
+			children = (
+				174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */,
+			);
+			path = FeedAPI;
+			sourceTree = "<group>";
+		};
 		175DFE8D2891B459006E4CB5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 				175DFE992891B459006E4CB5 /* AppDelegate.swift */,
 				175DFE9B2891B459006E4CB5 /* ViewController.swift */,
 				175DFED728995E7C006E4CB5 /* Feed Feature */,
+				174D459D28997782001AAC96 /* FeedAPI */,
 				175DFE9D2891B459006E4CB5 /* Assets.xcassets */,
 				175DFE9F2891B459006E4CB5 /* Main.storyboard */,
 				175DFEA22891B459006E4CB5 /* FeedApp.entitlements */,
@@ -209,6 +220,7 @@
 				175DFE9C2891B459006E4CB5 /* ViewController.swift in Sources */,
 				175DFE9A2891B459006E4CB5 /* AppDelegate.swift in Sources */,
 				175DFEC72891B517006E4CB5 /* FeedLoader.swift in Sources */,
+				174D459F289977A3001AAC96 /* RemoteFeedLoader.swift in Sources */,
 				175DFEC52891B47E006E4CB5 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
