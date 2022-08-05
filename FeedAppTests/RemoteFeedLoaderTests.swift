@@ -53,7 +53,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         samples.enumerated().forEach { index, code in
             
             expect(sut, toCompleteWithResult: .failure(.invalidData), when: {
-                let json = makeItemsJSON(items: [])
+                let json = makeItemsJSON([])
                 client.complete(withStatusCode: code, data: json, at: index)
             })
         }
@@ -73,7 +73,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         let (sut, client) = makeSUT()
         
         expect(sut, toCompleteWithResult: .success([]), when: {
-            let emptyListJSON = makeItemsJSON(items: [])
+            let emptyListJSON = makeItemsJSON([])
             client.complete(withStatusCode: 200, data: emptyListJSON)
         })
     }
@@ -92,9 +92,23 @@ class RemoteFeedLoaderTests: XCTestCase {
         let items = [item1.model, item2.model]
         
         expect(sut, toCompleteWithResult: .success(items), when: {
-            let json = makeItemsJSON(items: [item1.json, item2.json])
+            let json = makeItemsJSON([item1.json, item2.json])
             client.complete(withStatusCode: 200, data: json)
         })
+    }
+    
+    func test_load_doesNotDeliverResulktAfterSUTInstanceHasBeenDeallocated() {
+        let url = URL(string: "http://a-url.com")!
+        let client = HTTPClientSpy()
+        var sut: RemoteFeedLoader? = RemoteFeedLoader(url: url, client: client)
+        
+        var capturedResult = [RemoteFeedLoader.Result]()
+        sut?.load { capturedResult.append($0) }
+        
+        sut = nil
+        client.complete(withStatusCode: 200, data: makeItemsJSON([]))
+        
+        XCTAssertTrue(capturedResult.isEmpty)
     }
     
     // MARK: - Helpers
@@ -131,7 +145,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         return (model, json)
     }
     
-    private func makeItemsJSON(items: [[String : Any]]) -> Data {
+    private func makeItemsJSON(_ items: [[String : Any]]) -> Data {
         let itemsJSON = ["items": items]
         return try! JSONSerialization.data(withJSONObject: itemsJSON)
     }
