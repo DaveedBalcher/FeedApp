@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1340"
+   LastUpgradeVersion = "1420"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -47,6 +47,17 @@
                BlueprintIdentifier = "175DFEA62891B459006E4CB5"
                BuildableName = "FeedAppTests.xctest"
                BlueprintName = "FeedAppTests"
+               ReferencedContainer = "container:FeedApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "177CDECD2970B2CA00D74391"
+               BuildableName = "FeedAppAPIEndToEndTests.xctest"
+               BlueprintName = "FeedAppAPIEndToEndTests"
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
