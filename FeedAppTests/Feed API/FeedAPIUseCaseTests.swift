@@ -127,17 +127,17 @@ class FeedAPIUseCaseTests: XCTestCase {
         return .failure(error)
     }
     
-    private func makeItem(description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
-        let model = FeedItem(id: UUID(),
+    private func makeItem(description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
+        let model = FeedImage(id: UUID(),
                                 description: description,
                                 location: location,
-                                imageURL: imageURL)
+                                url: imageURL)
         
         let json = [
             "id": model.id.uuidString,
             "description": model.description,
             "location": model.location,
-            "image": model.imageURL.absoluteString
+            "image": model.url.absoluteString
         ].compactMapValues { $0 }
         
         return (model, json)
