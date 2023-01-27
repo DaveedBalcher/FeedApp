@@ -18,7 +18,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
 
     func test_save_requestCacheDeletion() {
         let (sut, store) = makeSUT()
-        let items = [uniqueItem(), uniqueItem()]
+        let items = uniqueItems().models
         
         sut.save(items) { _ in }
         
@@ -27,7 +27,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
     
     func test_save_doesNotRequestCacheInsertionOnDeletionError() {
         let (sut, store) = makeSUT()
-        let items = [uniqueItem(), uniqueItem()]
+        let items = uniqueItems().models
         let deletionError = anyNSError()
         
         sut.save(items) { _ in }
@@ -39,8 +39,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
     func test_save_requestsCacheInsertionWithTimestampOnSuccessfulDeletion() {
         let timestamp = Date()
         let (sut, store) = makeSUT(currentDate: { timestamp })
-        let items = [uniqueItem(), uniqueItem()]
-        let localItems = items.map { LocalFeedItem(id: $0.id, description: $0.description, location: $0.location, imageURL: $0.imageURL)}
+        let (items, localItems) = uniqueItems()
         
         sut.save(items) { _ in }
         store.completeDeletionSuccessfully()
@@ -172,6 +171,12 @@ final class CacheFeedUseCaseTests: XCTestCase {
                  description: "any",
                  location: "any",
                  imageURL: anyURL())
+    }
+    
+    private func uniqueItems() -> (models: [FeedItem], local: [LocalFeedItem]) {
+        let items = [uniqueItem(), uniqueItem()]
+        let localItems = items.map { LocalFeedItem(id: $0.id, description: $0.description, location: $0.location, imageURL: $0.imageURL)}
+        return (items, localItems)
     }
     
     private func anyURL() -> URL {
