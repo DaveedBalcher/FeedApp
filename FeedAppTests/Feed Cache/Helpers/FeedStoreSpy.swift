@@ -9,14 +9,13 @@ import Foundation
 import FeedApp
 
 internal class FeedStoreSpy: FeedStore {
-    
-    enum RecievedMessages: Equatable {
-        case deleteCacheFeed
+    enum ReceivedMessage: Equatable {
+        case deleteCachedFeed
         case insert([LocalFeedImage], Date)
         case retrieve
     }
     
-    private(set) var recievedMessages = [RecievedMessages]()
+    private(set) var receivedMessages = [ReceivedMessage]()
     
     private var deletionCompletions = [DeletionCompletion]()
     private var insertionCompletions = [InsertionCompletion]()
@@ -24,7 +23,7 @@ internal class FeedStoreSpy: FeedStore {
     
     func deleteCachedFeed(completion: @escaping DeletionCompletion) {
         deletionCompletions.append(completion)
-        recievedMessages.append(.deleteCacheFeed)
+        receivedMessages.append(.deleteCachedFeed)
     }
     
     func completeDeletion(with error: Error, at index: Int = 0) {
@@ -35,9 +34,9 @@ internal class FeedStoreSpy: FeedStore {
         deletionCompletions[index](nil)
     }
     
-    func insert(_ feedImages: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion) {
+    func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionCompletion) {
         insertionCompletions.append(completion)
-        recievedMessages.append(.insert(feedImages, timestamp))
+        receivedMessages.append(.insert(feed, timestamp))
     }
     
     func completeInsertion(with error: Error, at index: Int = 0) {
@@ -50,14 +49,18 @@ internal class FeedStoreSpy: FeedStore {
     
     func retrieve(completion: @escaping RetrievalCompletion) {
         retrievalCompletions.append(completion)
-        recievedMessages.append(.retrieve)
+        receivedMessages.append(.retrieve)
     }
     
     func completeRetrieval(with error: Error, at index: Int = 0) {
-        retrievalCompletions[index](error)
+        retrievalCompletions[index](.failure(error))
     }
     
     func completeRetrievalWithEmptyCache(at index: Int = 0) {
-        retrievalCompletions[index](nil)
+        retrievalCompletions[index](.empty)
+    }
+    
+    func completeRetrieval(with feed: [LocalFeedImage], timestamp: Date, at index: Int = 0) {
+        retrievalCompletions[index](.found(feed: feed, timestamp: timestamp))
     }
 }
