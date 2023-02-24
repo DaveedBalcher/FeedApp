@@ -37,7 +37,7 @@ public class CodableFeedStore: FeedStore {
     
     private let storeURL: URL
 
-    init(storeURL: URL) {
+    public init(storeURL: URL) {
         self.storeURL = storeURL
     }
     
