@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CacheFeedImage" representedClassName="CacheFeedImage" syncable="YES">
+        <attribute name="descriptionString" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="url" attributeType="URI"/>
+        <relationship name="post" maxCount="1" deletionRule="Nullify" destinationEntity="CacheFeedPost" inverseName="images" inverseEntity="CacheFeedPost"/>
+    </entity>
+    <entity name="CacheFeedPost" representedClassName="CacheFeedPost" syncable="YES">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="images" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CacheFeedImage" inverseName="post" inverseEntity="CacheFeedImage"/>
+    </entity>
+    <elements>
+        <element name="CacheFeedImage" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="CacheFeedPost" positionX="-227.0859375" positionY="-17.25" width="128" height="59"/>
+    </elements>
+</model>
