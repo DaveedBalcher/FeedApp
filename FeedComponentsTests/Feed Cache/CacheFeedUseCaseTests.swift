@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import FeedApp
+import FeedComponents
 
 final class CacheFeedUseCaseTests: XCTestCase {
 

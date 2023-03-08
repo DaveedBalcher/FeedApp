@@ -6,9 +6,7 @@
 //
 
 import XCTest
-@testable import FeedApp
-
-
+@testable import FeedComponents
 
 class FeedAPIUseCaseTests: XCTestCase {
     

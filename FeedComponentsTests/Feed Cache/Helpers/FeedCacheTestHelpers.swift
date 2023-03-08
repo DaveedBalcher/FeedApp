@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FeedApp
+import FeedComponents
 
 func uniqueFeedImage() -> FeedImage {
     FeedImage(id: UUID(),

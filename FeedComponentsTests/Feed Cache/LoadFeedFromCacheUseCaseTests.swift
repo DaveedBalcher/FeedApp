@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import FeedApp
+import FeedComponents
 
 class LoadFeedFromCacheUseCaseTests: XCTestCase {
     

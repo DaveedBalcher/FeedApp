@@ -7,7 +7,7 @@
 
 import XCTest
 import UIKit
-import FeedApp
+import FeedComponents
 
 final class FeedViewController: UITableViewController {
     private var loader: FeedLoader?

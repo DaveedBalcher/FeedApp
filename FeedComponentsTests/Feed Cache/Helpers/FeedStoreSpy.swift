@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FeedApp
+import FeedComponents
 
 internal class FeedStoreSpy: FeedStore {
     enum ReceivedMessage: Equatable {
