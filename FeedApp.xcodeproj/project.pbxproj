@@ -53,6 +53,7 @@
 		1780E7C929B90E1D00861CD4 /* FeedComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1780E78729B90C3C00861CD4 /* FeedComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1780E7D829B940FD00861CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFE992891B459006E4CB5 /* AppDelegate.swift */; };
 		1780E7D929B9410100861CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175DFE9F2891B459006E4CB5 /* Main.storyboard */; };
+		1780E7DB29BA391F00861CD4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780E7DA29BA391F00861CD4 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,7 @@
 		1780E76129B907FE00861CD4 /* FeedApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FeedApp.xcodeproj; sourceTree = "<group>"; };
 		1780E78729B90C3C00861CD4 /* FeedComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1780E78E29B90C3C00861CD4 /* FeedComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1780E7DA29BA391F00861CD4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		17DC36032981D5B1007720EB /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		17DC363A29842128007720EB /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
 		17DC363C29842170007720EB /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 		1780E74829B8F2DF00861CD4 /* FeedAppiOS */ = {
 			isa = PBXGroup;
 			children = (
+				1780E7DA29BA391F00861CD4 /* FeedViewController.swift */,
 			);
 			path = FeedAppiOS;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 					};
 					1780E74629B8F2DF00861CD4 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					1780E74D29B8F2DF00861CD4 = {
 						CreatedOnToolsVersion = 14.2;
@@ -732,6 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1780E7DB29BA391F00861CD4 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1115,6 +1120,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1137,6 +1143,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1148,6 +1155,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1181,6 +1189,7 @@
 		1780E75A29B8F2DF00861CD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1207,6 +1216,7 @@
 		1780E75B29B8F2DF00861CD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
