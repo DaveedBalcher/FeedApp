@@ -317,6 +317,10 @@ private extension FeedViewController {
 }
 
 private extension FeedImageCell {
+    func simulateRetryAction() {
+        feedImageRetryButton.simulateTap()
+    }
+    
     var isShowingLocation: Bool {
         return !locationContainer.isHidden
     }
@@ -339,6 +343,16 @@ private extension FeedImageCell {
     
     var renderedImage: Data? {
         return feedImageView.image?.pngData()
+    }
+}
+
+private extension UIButton {
+    func simulateTap() {
+        allTargets.forEach { target in
+            actions(forTarget: target, forControlEvent: .touchUpInside)?.forEach {
+                (target as NSObject).perform(Selector($0))
+            }
+        }
     }
 }
 
