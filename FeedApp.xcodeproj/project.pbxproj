@@ -56,20 +56,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		177CDED22970B2CA00D74391 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 175DFE8E2891B459006E4CB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 175DFE952891B459006E4CB5;
-			remoteInfo = FeedApp;
-		};
-		1780E71929B6AAD200861CD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 175DFE8E2891B459006E4CB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 175DFE952891B459006E4CB5;
-			remoteInfo = FeedApp;
-		};
 		1780E75029B8F2DF00861CD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 175DFE8E2891B459006E4CB5 /* Project object */;
@@ -83,13 +69,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1780E78629B90C3C00861CD4;
 			remoteInfo = FeedComponents;
-		};
-		1780E79229B90C3C00861CD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 175DFE8E2891B459006E4CB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 175DFE952891B459006E4CB5;
-			remoteInfo = FeedApp;
 		};
 		1780E7CA29B90E1E00861CD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -134,7 +113,6 @@
 		174D45ED289D6AD7001AAC96 /* FeedItemMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemMapper.swift; sourceTree = "<group>"; };
 		174D45F0289D888C001AAC96 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		1755E61328A40D4900164552 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
-		175DFE962891B459006E4CB5 /* FeedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175DFE992891B459006E4CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175DFEA22891B459006E4CB5 /* FeedApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedApp.entitlements; sourceTree = "<group>"; };
 		175DFEC42891B47E006E4CB5 /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
@@ -165,13 +143,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		175DFE932891B459006E4CB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		177CDECB2970B2CA00D74391 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,7 +272,6 @@
 		175DFE972891B459006E4CB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				175DFE962891B459006E4CB5 /* FeedApp.app */,
 				177CDECE2970B2CA00D74391 /* FeedAppAPIEndToEndTests.xctest */,
 				1780E71529B6AAD200861CD4 /* FeedAppCacheIntegrationTests.xctest */,
 				1780E74729B8F2DF00861CD4 /* FeedAppiOS.framework */,
@@ -450,23 +420,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		175DFE952891B459006E4CB5 /* FeedApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 175DFEBB2891B459006E4CB5 /* Build configuration list for PBXNativeTarget "FeedApp" */;
-			buildPhases = (
-				175DFE922891B459006E4CB5 /* Sources */,
-				175DFE932891B459006E4CB5 /* Frameworks */,
-				175DFE942891B459006E4CB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FeedApp;
-			productName = FeedApp;
-			productReference = 175DFE962891B459006E4CB5 /* FeedApp.app */;
-			productType = "com.apple.product-type.application";
-		};
 		177CDECD2970B2CA00D74391 /* FeedAppAPIEndToEndTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 177CDED42970B2CA00D74391 /* Build configuration list for PBXNativeTarget "FeedAppAPIEndToEndTests" */;
@@ -478,7 +431,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				177CDED32970B2CA00D74391 /* PBXTargetDependency */,
 			);
 			name = FeedAppAPIEndToEndTests;
 			productName = FeedAppAPIEndToEndTests;
@@ -496,7 +448,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1780E71A29B6AAD200861CD4 /* PBXTargetDependency */,
 			);
 			name = FeedAppCacheIntegrationTests;
 			productName = FeedAppCacheIntegrationTests;
@@ -571,7 +522,6 @@
 			);
 			dependencies = (
 				1780E79129B90C3C00861CD4 /* PBXTargetDependency */,
-				1780E79329B90C3C00861CD4 /* PBXTargetDependency */,
 			);
 			name = FeedComponentsTests;
 			productName = FeedComponentsTests;
@@ -588,9 +538,6 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					175DFE952891B459006E4CB5 = {
-						CreatedOnToolsVersion = 13.4.1;
-					};
 					177CDECD2970B2CA00D74391 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 175DFE952891B459006E4CB5;
@@ -635,7 +582,6 @@
 			);
 			projectRoot = "";
 			targets = (
-				175DFE952891B459006E4CB5 /* FeedApp */,
 				177CDECD2970B2CA00D74391 /* FeedAppAPIEndToEndTests */,
 				1780E71429B6AAD200861CD4 /* FeedAppCacheIntegrationTests */,
 				1780E74629B8F2DF00861CD4 /* FeedAppiOS */,
@@ -647,13 +593,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		175DFE942891B459006E4CB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		177CDECC2970B2CA00D74391 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -699,13 +638,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		175DFE922891B459006E4CB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		177CDECA2970B2CA00D74391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -793,16 +725,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		177CDED32970B2CA00D74391 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 175DFE952891B459006E4CB5 /* FeedApp */;
-			targetProxy = 177CDED22970B2CA00D74391 /* PBXContainerItemProxy */;
-		};
-		1780E71A29B6AAD200861CD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 175DFE952891B459006E4CB5 /* FeedApp */;
-			targetProxy = 1780E71929B6AAD200861CD4 /* PBXContainerItemProxy */;
-		};
 		1780E75129B8F2DF00861CD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1780E74629B8F2DF00861CD4 /* FeedAppiOS */;
@@ -812,11 +734,6 @@
 			isa = PBXTargetDependency;
 			target = 1780E78629B90C3C00861CD4 /* FeedComponents */;
 			targetProxy = 1780E79029B90C3C00861CD4 /* PBXContainerItemProxy */;
-		};
-		1780E79329B90C3C00861CD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 175DFE952891B459006E4CB5 /* FeedApp */;
-			targetProxy = 1780E79229B90C3C00861CD4 /* PBXContainerItemProxy */;
 		};
 		1780E7CB29B90E1E00861CD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -938,68 +855,6 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		175DFEBC2891B459006E4CB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FeedApp/FeedApp.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = W5SMVQ4M6D;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FeedApp/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Xpressive.FeedApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		175DFEBD2891B459006E4CB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = FeedApp/FeedApp.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = W5SMVQ4M6D;
-				ENABLE_HARDENED_RUNTIME = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FeedApp/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Xpressive.FeedApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1312,7 +1167,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FeedApp";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -1334,7 +1189,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FeedApp";
+				TEST_HOST = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1347,15 +1202,6 @@
 			buildConfigurations = (
 				175DFEB92891B459006E4CB5 /* Debug */,
 				175DFEBA2891B459006E4CB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		175DFEBB2891B459006E4CB5 /* Build configuration list for PBXNativeTarget "FeedApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				175DFEBC2891B459006E4CB5 /* Debug */,
-				175DFEBD2891B459006E4CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
