@@ -1,0 +1,18 @@
+//
+//  UIRefreshControl+TestHelpers.swift
+//  FeedAppiOSTests
+//
+//  Created by Daveed Balcher on 4/27/23.
+//
+
+import UIKit
+
+private extension UIRefreshControl {
+    func simulatePullToRefresh() {
+        allTargets.forEach { target in
+            actions(forTarget: target, forControlEvent: .valueChanged)?.forEach {
+                (target as NSObject).perform(Selector($0))
+            }
+        }
+    }
+}
