@@ -255,8 +255,8 @@
 		1749D4D129FFFB90007FE489 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1749D4D229FFFBBF007FE489 /* FeedViewModel.swift */,
 				1749D4D62A093F20007FE489 /* FeedPresenter.swift */,
+				1749D4D229FFFBBF007FE489 /* FeedViewModel.swift */,
 				1749D4D42A000114007FE489 /* FeedImageViewModel.swift */,
 			);
 			path = "Feed Presentation";
