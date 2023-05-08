@@ -5,7 +5,6 @@
 //  Created by Daveed Balcher on 5/1/23.
 //
 
-import Foundation
 import FeedComponents
 
 final class FeedViewModel {

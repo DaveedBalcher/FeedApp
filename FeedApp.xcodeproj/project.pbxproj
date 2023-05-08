@@ -250,13 +250,13 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		1749D4D129FFFB90007FE489 /* Models */ = {
+		1749D4D129FFFB90007FE489 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				1749D4D229FFFBBF007FE489 /* FeedViewModel.swift */,
 				1749D4D42A000114007FE489 /* FeedImageViewModel.swift */,
 			);
-			path = Models;
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		174D459D28997782001AAC96 /* FeedAPI */ = {
@@ -388,7 +388,7 @@
 				176E040429FAE610002AF6CB /* Composers */,
 				176E03EA29FAD1B4002AF6CB /* Controllers */,
 				176E03EB29FAD1E4002AF6CB /* Views */,
-				1749D4D129FFFB90007FE489 /* Models */,
+				1749D4D129FFFB90007FE489 /* Feed Presentation */,
 			);
 			path = FeedUI;
 			sourceTree = "<group>";
