@@ -426,8 +426,8 @@
 		176E03FC29FADEF4002AF6CB /* FeedUI */ = {
 			isa = PBXGroup;
 			children = (
-				176E03EC29FAD2B9002AF6CB /* Helpers */,
 				1780E75E29B8F4B400861CD4 /* FeedUIIntegrationTests.swift */,
+				176E03EC29FAD2B9002AF6CB /* Helpers */,
 				174E69EC2A30D9B000C9A501 /* Feed Presentation */,
 			);
 			path = FeedUI;
