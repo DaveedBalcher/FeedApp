@@ -14,10 +14,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="clu-9B-M8g" customClass="ErrorView" customModule="EssentialFeediOS" customModuleProvider="target">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="clu-9B-M8g" customClass="ErrorView" customModule="FeedAppiOS" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slz-gK-hBg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="414" id="Pqz-48-BIv"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="ZLh-Mq-KDE"/>
+                                        <constraint firstAttribute="height" constant="16" id="wTd-Yf-jg6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Slz-gK-hBg" firstAttribute="centerY" secondItem="clu-9B-M8g" secondAttribute="centerY" id="4d4-dZ-NcX"/>
+                                <constraint firstItem="Slz-gK-hBg" firstAttribute="centerX" secondItem="clu-9B-M8g" secondAttribute="centerX" id="kuI-Pa-b4s"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="label" destination="Slz-gK-hBg" id="ewv-lx-9EJ"/>
+                            </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="pGT-Qn-vv2">
                             <rect key="frame" x="0.0" y="674" width="414" height="16"/>
