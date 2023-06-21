@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class RemoteFeedImageDataLoader {
+public final class RemoteFeedImageDataLoader: FeedImageDataLoader {
     private let client: HTTPClient
 
     public init(client: HTTPClient) {
@@ -48,7 +48,7 @@ public final class RemoteFeedImageDataLoader {
             guard self != nil else { return }
 
             switch result {
-            case let .success(data, response):
+            case let .success((data, response)):
                 if response.statusCode == 200, !data.isEmpty {
                     task.complete(with: .success(data))
                 } else {
