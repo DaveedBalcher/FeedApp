@@ -39,7 +39,7 @@ class RemoteFeedImageDataLoaderTests: XCTestCase {
         let (sut, client) = makeSUT()
         let clientError = NSError(domain: "a client error", code: 0)
 
-        expect(sut, toCompleteWith: .failure(RemoteFeedImageDataLoader.Error.), when: {
+        expect(sut, toCompleteWith: .failure(RemoteFeedImageDataLoader.Error.connectivity), when: {
             client.complete(with: clientError)
         })
     }
