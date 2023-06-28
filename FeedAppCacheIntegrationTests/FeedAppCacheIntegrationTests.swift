@@ -23,10 +23,10 @@ final class FeedAppCacheIntegrationTests: XCTestCase {
     }
     
     // MARK: - LocalFeedLoader Tests
-
+    
     func test_loadFeed_deliversNoItemsOnEmptyCache() {
         let feedLoader = makeFeedLoader()
-
+        
         expect(feedLoader, toLoad: [])
     }
     
@@ -36,7 +36,7 @@ final class FeedAppCacheIntegrationTests: XCTestCase {
         let feed = uniqueImageFeed().models
         
         save(feed, with: feedLoaderToPerformSave)
-
+        
         expect(feedLoaderToPerformLoad, toLoad: feed)
     }
     
@@ -49,7 +49,7 @@ final class FeedAppCacheIntegrationTests: XCTestCase {
         
         save(firstFeed, with: feedLoaderToPerformFirstSave)
         save(latestFeed, with: feedLoaderToPerformLastSave)
-
+        
         expect(feedLoaderToPerformLoad, toLoad: latestFeed)
     }
     
@@ -67,6 +67,23 @@ final class FeedAppCacheIntegrationTests: XCTestCase {
         
         expect(imageLoaderToPerformLoad, toLoad: dataToSave, for: image.url)
     }
+    
+    func test_saveImageData_overridesSavedImageDataOnASeparateInstance() {
+        let imageLoaderToPerformFirstSave = makeImageLoader()
+        let imageLoaderToPerformLastSave = makeImageLoader()
+        let imageLoaderToPerformLoad = makeImageLoader()
+        let feedLoader = makeFeedLoader()
+        let image = uniqueFeedImage()
+        let firstImageData = Data("first".utf8)
+        let lastImageData = Data("last".utf8)
+        
+        save([image], with: feedLoader)
+        save(firstImageData, for: image.url, with: imageLoaderToPerformFirstSave)
+        save(lastImageData, for: image.url, with: imageLoaderToPerformLastSave)
+        
+        expect(imageLoaderToPerformLoad, toLoad: lastImageData, for: image.url)
+    }
+    
     
     // MARK: - Helpers
     
@@ -161,5 +178,5 @@ final class FeedAppCacheIntegrationTests: XCTestCase {
     private func cachesDirectory() -> URL {
         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
     }
-
+    
 }
