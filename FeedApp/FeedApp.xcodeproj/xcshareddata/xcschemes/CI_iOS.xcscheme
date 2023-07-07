@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "175DFE952891B459006E4CB5"
-               BuildableName = "FeedApp.app"
-               BlueprintName = "FeedApp"
+               BlueprintIdentifier = "1780E78629B90C3C00861CD4"
+               BuildableName = "FeedComponents.framework"
+               BlueprintName = "FeedComponents"
+               ReferencedContainer = "container:FeedApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1780E74629B8F2DF00861CD4"
+               BuildableName = "FeedAppiOS.framework"
+               BlueprintName = "FeedAppiOS"
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,10 +46,24 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "175DFE952891B459006E4CB5"
-            BuildableName = "FeedApp.app"
-            BlueprintName = "FeedApp"
+            BlueprintIdentifier = "1780E74629B8F2DF00861CD4"
+            BuildableName = "FeedAppiOS.framework"
+            BlueprintName = "FeedAppiOS"
             ReferencedContainer = "container:FeedApp.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1780E78629B90C3C00861CD4"
+            BuildableName = "FeedComponents.framework"
+            BlueprintName = "FeedComponents"
+            ReferencedContainer = "container:FeedApp.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "175538B42A5706070052CF1A"
+            BuildableName = "EssentialApp.app"
+            BlueprintName = "EssentialApp"
+            ReferencedContainer = "container:../EssentialApp/EssentialApp.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -44,9 +72,9 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "175DFEA62891B459006E4CB5"
-               BuildableName = "FeedAppTests.xctest"
-               BlueprintName = "FeedAppTests"
+               BlueprintIdentifier = "177CDECD2970B2CA00D74391"
+               BuildableName = "FeedAppAPIEndToEndTests.xctest"
+               BlueprintName = "FeedAppAPIEndToEndTests"
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -63,6 +91,17 @@
          </TestableReference>
          <TestableReference
             skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1780E74D29B8F2DF00861CD4"
+               BuildableName = "FeedAppiOSTests.xctest"
+               BlueprintName = "FeedAppiOSTests"
+               ReferencedContainer = "container:FeedApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -70,6 +109,17 @@
                BuildableName = "FeedComponentsTests.xctest"
                BlueprintName = "FeedComponentsTests"
                ReferencedContainer = "container:FeedApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "175538CA2A5706080052CF1A"
+               BuildableName = "EssentialAppTests.xctest"
+               BlueprintName = "EssentialAppTests"
+               ReferencedContainer = "container:../EssentialApp/EssentialApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -84,16 +134,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "175DFE952891B459006E4CB5"
-            BuildableName = "FeedApp.app"
-            BlueprintName = "FeedApp"
-            ReferencedContainer = "container:FeedApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -101,16 +141,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "175DFE952891B459006E4CB5"
-            BuildableName = "FeedApp.app"
-            BlueprintName = "FeedApp"
+            BlueprintIdentifier = "1780E74629B8F2DF00861CD4"
+            BuildableName = "FeedAppiOS.framework"
+            BlueprintName = "FeedAppiOS"
             ReferencedContainer = "container:FeedApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
