@@ -1,6 +1,6 @@
 //
-//  FeedAppAPIEndToEndTests.swift
-//  FeedAppAPIEndToEndTests
+//  FeedComponentsAPIEndToEndTests.swift
+//  FeedComponentsAPIEndToEndTests
 //
 //  Created by Daveed Balcher on 1/12/23.
 //
@@ -8,7 +8,7 @@
 import XCTest
 import FeedComponents
 
-class EssentialFeedAPIEndToEndTests: XCTestCase {
+class FeedComponentsAPIEndToEndTests: XCTestCase {
 
     func test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData() {
         switch getFeedResult() {

@@ -20,20 +20,6 @@
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1780E74629B8F2DF00861CD4"
-               BuildableName = "FeedAppiOS.framework"
-               BlueprintName = "FeedAppiOS"
-               ReferencedContainer = "container:FeedApp.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -73,8 +59,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "177CDECD2970B2CA00D74391"
-               BuildableName = "FeedAppAPIEndToEndTests.xctest"
-               BlueprintName = "FeedAppAPIEndToEndTests"
+               BuildableName = "FeedComponentsAPIEndToEndTests.xctest"
+               BlueprintName = "FeedComponentsAPIEndToEndTests"
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -84,8 +70,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1780E71429B6AAD200861CD4"
-               BuildableName = "FeedAppCacheIntegrationTests.xctest"
-               BlueprintName = "FeedAppCacheIntegrationTests"
+               BuildableName = "FeedComponentsCacheIntegrationTests.xctest"
+               BlueprintName = "FeedComponentsCacheIntegrationTests"
                ReferencedContainer = "container:FeedApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -113,18 +99,6 @@
          </TestableReference>
          <TestableReference
             skipped = "NO"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "175538CA2A5706080052CF1A"
-               BuildableName = "EssentialAppTests.xctest"
-               BlueprintName = "EssentialAppTests"
-               ReferencedContainer = "container:../EssentialApp/EssentialApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES"
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -156,9 +130,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1780E74629B8F2DF00861CD4"
-            BuildableName = "FeedAppiOS.framework"
-            BlueprintName = "FeedAppiOS"
+            BlueprintIdentifier = "1780E78629B90C3C00861CD4"
+            BuildableName = "FeedComponents.framework"
+            BlueprintName = "FeedComponents"
             ReferencedContainer = "container:FeedApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

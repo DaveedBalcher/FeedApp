@@ -1,6 +1,6 @@
 //
-//  FeedAppCacheIntegrationTests.swift
-//  FeedAppCacheIntegrationTests
+//  FeedComponentsCacheIntegrationTests.swift
+//  FeedComponentsCacheIntegrationTests
 //
 //  Created by Daveed Balcher on 3/6/23.
 //
@@ -8,7 +8,7 @@
 import XCTest
 import FeedComponents
 
-final class FeedAppCacheIntegrationTests: XCTestCase {
+final class FeedComponentsCacheIntegrationTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
