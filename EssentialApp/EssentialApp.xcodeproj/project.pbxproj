@@ -47,6 +47,7 @@
 		175539632A5D9DBA0052CF1A /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755395A2A5D9D9C0052CF1A /* FeedViewAdapter.swift */; };
 		175539652A5DA3C10052CF1A /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */; };
 		175539672A5DA78D0052CF1A /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539662A5DA78D0052CF1A /* HTTPClientStub.swift */; };
+		175539692A5DA7D80052CF1A /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539682A5DA7D80052CF1A /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		1755395C2A5D9D9C0052CF1A /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		175539662A5DA78D0052CF1A /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		175539682A5DA7D80052CF1A /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				175539432A5D9B130052CF1A /* FeedUIIntegrationTests+LoaderSpy.swift */,
 				175539442A5D9B130052CF1A /* FeedUIIntegrationTests+Localization.swift */,
 				175539662A5DA78D0052CF1A /* HTTPClientStub.swift */,
+				175539682A5DA7D80052CF1A /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				1755394D2A5D9B140052CF1A /* UIImage+TestHelpers.swift in Sources */,
 				1755391B2A585D570052CF1A /* XCTestCase+FeedLoader.swift in Sources */,
 				1755390E2A575C840052CF1A /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
+				175539692A5DA7D80052CF1A /* InMemoryFeedStore.swift in Sources */,
 				1755394B2A5D9B140052CF1A /* UIButton+TestHelpers.swift in Sources */,
 				175539242A58638D0052CF1A /* FeedImageDataLoaderSpy.swift in Sources */,
 				175539562A5D9C2D0052CF1A /* SceneDelegateTests.swift in Sources */,
