@@ -30,7 +30,6 @@
 		175539242A58638D0052CF1A /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539232A58638D0052CF1A /* FeedImageDataLoaderSpy.swift */; };
 		175539262A5864650052CF1A /* FeedImageDataLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539252A5864650052CF1A /* FeedImageDataLoaderTestCase.swift */; };
 		1755392A2A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539292A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift */; };
-		175539422A5D969F0052CF1A /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */; };
 		1755394A2A5D9B140052CF1A /* FeedViewController+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539482A5D9B130052CF1A /* FeedViewController+TestHelpers.swift */; };
 		1755394B2A5D9B140052CF1A /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539462A5D9B130052CF1A /* UIButton+TestHelpers.swift */; };
 		1755394C2A5D9B140052CF1A /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539452A5D9B130052CF1A /* FeedImageCell+TestHelpers.swift */; };
@@ -99,8 +98,6 @@
 		175539232A58638D0052CF1A /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
 		175539252A5864650052CF1A /* FeedImageDataLoaderTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderTestCase.swift; sourceTree = "<group>"; };
 		175539292A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
-		175539312A5B42050052CF1A /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
-		175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 		175539432A5D9B130052CF1A /* FeedUIIntegrationTests+LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+LoaderSpy.swift"; sourceTree = "<group>"; };
 		175539442A5D9B130052CF1A /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		175539452A5D9B130052CF1A /* FeedImageCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedImageCell+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -144,7 +141,6 @@
 			children = (
 				175538B72A5706070052CF1A /* EssentialApp */,
 				175538CE2A5706080052CF1A /* EssentialAppTests */,
-				175539302A5B42050052CF1A /* EssentialAppUIAcceptanceTests */,
 				175538B62A5706070052CF1A /* Products */,
 				175539002A57085A0052CF1A /* Frameworks */,
 			);
@@ -164,7 +160,6 @@
 			children = (
 				175538B82A5706070052CF1A /* AppDelegate.swift */,
 				175538BA2A5706070052CF1A /* SceneDelegate.swift */,
-				175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */,
 				1755390B2A575BF10052CF1A /* FeedLoaderWithFallbackComposite.swift */,
 				1755390F2A575EEE0052CF1A /* FeedImageDataLoaderWithFallbackComposite.swift */,
 				1755391E2A5862470052CF1A /* FeedLoaderCacheDecorator.swift */,
@@ -220,14 +215,6 @@
 				175539442A5D9B130052CF1A /* FeedUIIntegrationTests+Localization.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		175539302A5B42050052CF1A /* EssentialAppUIAcceptanceTests */ = {
-			isa = PBXGroup;
-			children = (
-				175539312A5B42050052CF1A /* EssentialAppUIAcceptanceTests.swift */,
-			);
-			path = EssentialAppUIAcceptanceTests;
 			sourceTree = "<group>";
 		};
 		1755395D2A5D9D9C0052CF1A /* Composers */ = {
@@ -353,7 +340,6 @@
 				1755392A2A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
 				1755391F2A5862470052CF1A /* FeedLoaderCacheDecorator.swift in Sources */,
 				175539602A5D9DBA0052CF1A /* MainQueueDispatchDecorator.swift in Sources */,
-				175539422A5D969F0052CF1A /* DebuggingSceneDelegate.swift in Sources */,
 				1755395E2A5D9DBA0052CF1A /* FeedLoaderPresentationAdapter.swift in Sources */,
 				175539612A5D9DBA0052CF1A /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				175539622A5D9DBA0052CF1A /* WeakRefVirtualProxy.swift in Sources */,
