@@ -31,6 +31,7 @@
 		175539262A5864650052CF1A /* FeedImageDataLoaderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539252A5864650052CF1A /* FeedImageDataLoaderTestCase.swift */; };
 		1755392A2A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539292A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift */; };
 		175539322A5B42050052CF1A /* EssentialAppUIAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539312A5B42050052CF1A /* EssentialAppUIAcceptanceTests.swift */; };
+		175539422A5D969F0052CF1A /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		175539292A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		1755392F2A5B42050052CF1A /* EssentialAppUIAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialAppUIAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		175539312A5B42050052CF1A /* EssentialAppUIAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialAppUIAcceptanceTests.swift; sourceTree = "<group>"; };
+		175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				175538B82A5706070052CF1A /* AppDelegate.swift */,
 				175538BA2A5706070052CF1A /* SceneDelegate.swift */,
+				175539412A5D969F0052CF1A /* DebuggingSceneDelegate.swift */,
 				1755390B2A575BF10052CF1A /* FeedLoaderWithFallbackComposite.swift */,
 				1755390F2A575EEE0052CF1A /* FeedImageDataLoaderWithFallbackComposite.swift */,
 				1755391E2A5862470052CF1A /* FeedLoaderCacheDecorator.swift */,
@@ -339,6 +342,7 @@
 				1755390C2A575BF10052CF1A /* FeedLoaderWithFallbackComposite.swift in Sources */,
 				1755392A2A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
 				1755391F2A5862470052CF1A /* FeedLoaderCacheDecorator.swift in Sources */,
+				175539422A5D969F0052CF1A /* DebuggingSceneDelegate.swift in Sources */,
 				175538BB2A5706070052CF1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
