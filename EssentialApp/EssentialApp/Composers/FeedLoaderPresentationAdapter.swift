@@ -7,6 +7,7 @@
 
 import Foundation
 import FeedComponents
+import FeedAppiOS
 
 final class FeedLoaderPresentationAdapter: FeedViewControllerDelegate {
     private let feedLoader: FeedLoader

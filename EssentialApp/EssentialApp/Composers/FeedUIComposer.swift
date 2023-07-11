@@ -7,6 +7,7 @@
 
 import UIKit
 import FeedComponents
+import FeedAppiOS
 
 public final class FeedUIComposer {
     private init() {}

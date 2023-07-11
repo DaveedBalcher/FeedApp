@@ -1,14 +1,15 @@
 //
 //  FeedUIIntegrationTests.swift
-//  FeedAppiOSTests
+//  EssentialAppTests
 //
-//  Created by Daveed Balcher on 3/8/23.
+//  Created by Daveed Balcher on 7/11/23.
 //
 
 import XCTest
 import UIKit
 import FeedComponents
 import FeedAppiOS
+import EssentialApp
 
 final class FeedUIIntegrationTests: XCTestCase {
     
