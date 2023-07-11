@@ -47,6 +47,7 @@
 		175539612A5D9DBA0052CF1A /* FeedImageDataLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755395C2A5D9D9C0052CF1A /* FeedImageDataLoaderPresentationAdapter.swift */; };
 		175539622A5D9DBA0052CF1A /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539592A5D9D9C0052CF1A /* WeakRefVirtualProxy.swift */; };
 		175539632A5D9DBA0052CF1A /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755395A2A5D9D9C0052CF1A /* FeedViewAdapter.swift */; };
+		175539652A5DA3C10052CF1A /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		1755395A2A5D9D9C0052CF1A /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
 		1755395B2A5D9D9C0052CF1A /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		1755395C2A5D9D9C0052CF1A /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				175539202A5863090052CF1A /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 				175539532A5D9BF10052CF1A /* FeedUIIntegrationTests.swift */,
 				175539552A5D9C2D0052CF1A /* SceneDelegateTests.swift */,
+				175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */,
 				175539172A585C250052CF1A /* Helpers */,
 			);
 			path = EssentialAppTests;
@@ -412,6 +415,7 @@
 			files = (
 				1755394E2A5D9B140052CF1A /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				1755394F2A5D9B140052CF1A /* FeedUIIntegrationTests+Localization.swift in Sources */,
+				175539652A5DA3C10052CF1A /* FeedAcceptanceTests.swift in Sources */,
 				175539142A575F970052CF1A /* SharedTestHelpers.swift in Sources */,
 				175539222A58631D0052CF1A /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */,
 				175539542A5D9BF10052CF1A /* FeedUIIntegrationTests.swift in Sources */,
