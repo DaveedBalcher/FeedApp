@@ -43,7 +43,7 @@ public final class FeedPresenter {
             bundle: Bundle(for: FeedPresenter.self),
             comment: "Title for the feed view")
     }
-
+    
     public func didStartLoadingFeed() {
         errorView.display(.noError)
         loadingView.display(FeedLoadingViewModel(isLoading: true))
