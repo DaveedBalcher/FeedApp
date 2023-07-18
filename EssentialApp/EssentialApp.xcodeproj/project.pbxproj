@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		175538B92A5706070052CF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175538B82A5706070052CF1A /* AppDelegate.swift */; };
 		175538BB2A5706070052CF1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175538BA2A5706070052CF1A /* SceneDelegate.swift */; };
-		175538C02A5706070052CF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175538BE2A5706070052CF1A /* Main.storyboard */; };
 		175538C22A5706080052CF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175538C12A5706080052CF1A /* Assets.xcassets */; };
 		175538C52A5706080052CF1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175538C32A5706080052CF1A /* LaunchScreen.storyboard */; };
 		175539022A57085A0052CF1A /* FeedAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175539012A57085A0052CF1A /* FeedAppiOS.framework */; };
@@ -79,7 +78,6 @@
 		175538B52A5706070052CF1A /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175538B82A5706070052CF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175538BA2A5706070052CF1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		175538BF2A5706070052CF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		175538C12A5706080052CF1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		175538C42A5706080052CF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		175538C62A5706080052CF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				1755391E2A5862470052CF1A /* FeedLoaderCacheDecorator.swift */,
 				175539292A5866710052CF1A /* FeedImageDataLoaderCacheDecorator.swift */,
 				1755395D2A5D9D9C0052CF1A /* Composers */,
-				175538BE2A5706070052CF1A /* Main.storyboard */,
 				175538C12A5706080052CF1A /* Assets.xcassets */,
 				175538C32A5706080052CF1A /* LaunchScreen.storyboard */,
 				175538C62A5706080052CF1A /* Info.plist */,
@@ -321,7 +318,6 @@
 			files = (
 				175538C52A5706080052CF1A /* LaunchScreen.storyboard in Resources */,
 				175538C22A5706080052CF1A /* Assets.xcassets in Resources */,
-				175538C02A5706070052CF1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +390,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		175538BE2A5706070052CF1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				175538BF2A5706070052CF1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		175538C32A5706080052CF1A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -539,7 +527,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -566,7 +553,6 @@
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
