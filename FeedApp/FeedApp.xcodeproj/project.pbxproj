@@ -85,7 +85,6 @@
 		1780E7C629B90D8800861CD4 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D45F0289D888C001AAC96 /* URLSessionHTTPClientTests.swift */; };
 		1780E7C729B90D8800861CD4 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFED828995F15006E4CB5 /* LoadFeedFromRemoteUseCaseTests.swift */; };
 		1780E7C829B90E1D00861CD4 /* FeedComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1780E78729B90C3C00861CD4 /* FeedComponents.framework */; };
-		1780E7C929B90E1D00861CD4 /* FeedComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1780E78729B90C3C00861CD4 /* FeedComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1780E7DB29BA391F00861CD4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780E7DA29BA391F00861CD4 /* FeedViewController.swift */; };
 		1780E7DD29BA3CF300861CD4 /* FeedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1780E7DC29BA3CF300861CD4 /* FeedImageCell.swift */; };
 		178A02A62A5EE630000497B9 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178A02A52A5EE630000497B9 /* UIImage+TestHelpers.swift */; };
@@ -126,28 +125,7 @@
 			remoteGlobalIDString = 1780E78629B90C3C00861CD4;
 			remoteInfo = FeedComponents;
 		};
-		1780E7CA29B90E1E00861CD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 175DFE8E2891B459006E4CB5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1780E78629B90C3C00861CD4;
-			remoteInfo = FeedComponents;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1780E7CC29B90E1E00861CD4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1780E7C929B90E1D00861CD4 /* FeedComponents.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		170A04D6299E93AA00BA2BF1 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
@@ -682,12 +660,10 @@
 				1780E74329B8F2DF00861CD4 /* Sources */,
 				1780E74429B8F2DF00861CD4 /* Frameworks */,
 				1780E74529B8F2DF00861CD4 /* Resources */,
-				1780E7CC29B90E1E00861CD4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1780E7CB29B90E1E00861CD4 /* PBXTargetDependency */,
 			);
 			name = FeedAppiOS;
 			productName = FeedAppiOS;
@@ -1004,11 +980,6 @@
 			target = 1780E78629B90C3C00861CD4 /* FeedComponents */;
 			targetProxy = 1780E79029B90C3C00861CD4 /* PBXContainerItemProxy */;
 		};
-		1780E7CB29B90E1E00861CD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1780E78629B90C3C00861CD4 /* FeedComponents */;
-			targetProxy = 1780E7CA29B90E1E00861CD4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1245,7 +1216,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DaveedBalcher.FeedAppiOS;
@@ -1281,7 +1251,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DaveedBalcher.FeedAppiOS;
@@ -1374,7 +1343,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DaveedBalcher.FeedComponents;
@@ -1412,7 +1380,6 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DaveedBalcher.FeedComponents;
