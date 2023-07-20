@@ -276,15 +276,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		171704742A434389005E1904 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				171704752A434394005E1904 /* HTTPClientSpy.swift */,
-				1717047C2A434A83005E1904 /* URLProtocolStub.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		171704792A4349E3005E1904 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,30 +333,26 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		174D459D28997782001AAC96 /* FeedAPI */ = {
+		174D459D28997782001AAC96 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
 				17DC363E29842A1D007720EB /* RemoteFeedItem.swift */,
 				174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */,
 				174D45ED289D6AD7001AAC96 /* FeedItemMapper.swift */,
-				174D45EB289D6A9C001AAC96 /* HTTPClient.swift */,
-				177CDEC82970AFFA00D74391 /* URLSessionHTTPClient.swift */,
 				171704772A43442D005E1904 /* RemoteFeedImageDataLoader.swift */,
 				175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */,
 				175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */,
 				171704792A4349E3005E1904 /* Helpers */,
 			);
-			path = FeedAPI;
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		174D45EF289D74A9001AAC96 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
 				175DFED828995F15006E4CB5 /* LoadFeedFromRemoteUseCaseTests.swift */,
-				174D45F0289D888C001AAC96 /* URLSessionHTTPClientTests.swift */,
 				171704722A41FE5D005E1904 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				175109A52A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
-				171704742A434389005E1904 /* Helpers */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -386,6 +373,55 @@
 				175109AC2A69C553008A89B3 /* ImageComment.swift */,
 			);
 			path = "Image Comments Feature";
+			sourceTree = "<group>";
+		};
+		175109AE2A69C7F3008A89B3 /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				174D45EB289D6A9C001AAC96 /* HTTPClient.swift */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		175109AF2A69C800008A89B3 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				177CDEC82970AFFA00D74391 /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		175109B02A69C814008A89B3 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				175109B32A69C8C6008A89B3 /* Helpers */,
+				174D45F0289D888C001AAC96 /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		175109B12A69C814008A89B3 /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				175109B22A69C856008A89B3 /* Helpers */,
+			);
+			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		175109B22A69C856008A89B3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				171704752A434394005E1904 /* HTTPClientSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		175109B32A69C8C6008A89B3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1717047C2A434A83005E1904 /* URLProtocolStub.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		1755E61228A40D0800164552 /* Helpers */ = {
@@ -537,9 +573,11 @@
 		1780E78829B90C3C00861CD4 /* FeedComponents */ = {
 			isa = PBXGroup;
 			children = (
+				175109AE2A69C7F3008A89B3 /* Shared API */,
+				175109AF2A69C800008A89B3 /* Shared API Infra */,
 				175109AB2A69C53B008A89B3 /* Image Comments Feature */,
 				175DFED728995E7C006E4CB5 /* Feed Feature */,
-				174D459D28997782001AAC96 /* FeedAPI */,
+				174D459D28997782001AAC96 /* Feed API */,
 				17DC36392984210E007720EB /* Feed Cache */,
 				173042872A40B59F0017DC9E /* Feed Presentation */,
 			);
@@ -549,9 +587,11 @@
 		1780E79429B90C3C00861CD4 /* FeedComponentsTests */ = {
 			isa = PBXGroup;
 			children = (
-				17DC36022981D572007720EB /* Feed Cache */,
 				1755E61228A40D0800164552 /* Helpers */,
+				175109B12A69C814008A89B3 /* Shared API */,
+				175109B02A69C814008A89B3 /* Shared API Infra */,
 				174D45EF289D74A9001AAC96 /* Feed API */,
+				17DC36022981D572007720EB /* Feed Cache */,
 				174E69EC2A30D9B000C9A501 /* Feed Presentation */,
 			);
 			path = FeedComponentsTests;
