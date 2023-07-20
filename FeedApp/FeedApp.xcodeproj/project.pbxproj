@@ -340,8 +340,6 @@
 				174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */,
 				174D45ED289D6AD7001AAC96 /* FeedItemMapper.swift */,
 				171704772A43442D005E1904 /* RemoteFeedImageDataLoader.swift */,
-				175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */,
-				175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */,
 				171704792A4349E3005E1904 /* Helpers */,
 			);
 			path = "Feed API";
@@ -352,7 +350,6 @@
 			children = (
 				175DFED828995F15006E4CB5 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				171704722A41FE5D005E1904 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				175109A52A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -422,6 +419,23 @@
 				1717047C2A434A83005E1904 /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		175109B42A69C912008A89B3 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */,
+				175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		175109B52A69C945008A89B3 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				175109A52A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 		1755E61228A40D0800164552 /* Helpers */ = {
@@ -576,6 +590,7 @@
 				175109AE2A69C7F3008A89B3 /* Shared API */,
 				175109AF2A69C800008A89B3 /* Shared API Infra */,
 				175109AB2A69C53B008A89B3 /* Image Comments Feature */,
+				175109B42A69C912008A89B3 /* Image Comments API */,
 				175DFED728995E7C006E4CB5 /* Feed Feature */,
 				174D459D28997782001AAC96 /* Feed API */,
 				17DC36392984210E007720EB /* Feed Cache */,
@@ -590,6 +605,7 @@
 				1755E61228A40D0800164552 /* Helpers */,
 				175109B12A69C814008A89B3 /* Shared API */,
 				175109B02A69C814008A89B3 /* Shared API Infra */,
+				175109B52A69C945008A89B3 /* Image Comments API */,
 				174D45EF289D74A9001AAC96 /* Feed API */,
 				17DC36022981D572007720EB /* Feed Cache */,
 				174E69EC2A30D9B000C9A501 /* Feed Presentation */,
