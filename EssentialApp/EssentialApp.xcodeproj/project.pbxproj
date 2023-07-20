@@ -36,6 +36,7 @@
 		175539652A5DA3C10052CF1A /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */; };
 		175539672A5DA78D0052CF1A /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539662A5DA78D0052CF1A /* HTTPClientStub.swift */; };
 		175539692A5DA7D80052CF1A /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539682A5DA7D80052CF1A /* InMemoryFeedStore.swift */; };
+		17DB1A512A6987FE0038DD3F /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DB1A502A6987FE0038DD3F /* CombineHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		175539642A5DA3C10052CF1A /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		175539662A5DA78D0052CF1A /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		175539682A5DA7D80052CF1A /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		17DB1A502A6987FE0038DD3F /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				175538B82A5706070052CF1A /* AppDelegate.swift */,
 				175538BA2A5706070052CF1A /* SceneDelegate.swift */,
+				17DB1A502A6987FE0038DD3F /* CombineHelpers.swift */,
 				1755395D2A5D9D9C0052CF1A /* Composers */,
 				175538C12A5706080052CF1A /* Assets.xcassets */,
 				175538C32A5706080052CF1A /* LaunchScreen.storyboard */,
@@ -311,6 +314,7 @@
 				175539622A5D9DBA0052CF1A /* WeakRefVirtualProxy.swift in Sources */,
 				175538BB2A5706070052CF1A /* SceneDelegate.swift in Sources */,
 				175539632A5D9DBA0052CF1A /* FeedViewAdapter.swift in Sources */,
+				17DB1A512A6987FE0038DD3F /* CombineHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
