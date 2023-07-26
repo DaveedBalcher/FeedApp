@@ -447,8 +447,8 @@
 		1755E61228A40D0800164552 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1755E61328A40D4900164552 /* XCTestCase+MemoryLeakTracking.swift */,
 				170A04D8299E945700BA2BF1 /* SharedTestHelpers.swift */,
+				1755E61328A40D4900164552 /* XCTestCase+MemoryLeakTracking.swift */,
 				174D46472A4354D200A7C0BB /* FeedImageDataStoreSpy.swift */,
 			);
 			path = Helpers;
