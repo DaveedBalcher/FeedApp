@@ -1,5 +1,5 @@
 //
-//  RemoteFeedImageDataLoaderTests.swift
+//  ImageCommentsMapperTests.swift
 //  FeedComponentsTests
 //
 //  Created by Daveed Balcher on 6/20/23.
