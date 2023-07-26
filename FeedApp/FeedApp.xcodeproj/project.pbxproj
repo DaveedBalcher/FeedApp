@@ -39,7 +39,6 @@
 		174E69EE2A30D9FC00C9A501 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174E69ED2A30D9FC00C9A501 /* FeedLocalizationTests.swift */; };
 		175109A62A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175109A52A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift */; };
 		175109A82A69C24F008A89B3 /* ImageCommentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */; };
-		175109AA2A69C274008A89B3 /* RemoteImageCommentsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */; };
 		175109AD2A69C553008A89B3 /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175109AC2A69C553008A89B3 /* ImageComment.swift */; };
 		1753C0882A1FF42500CC9CFB /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1753C0872A1FF42500CC9CFB /* UIImageView+Animations.swift */; };
 		1755391D2A5861770052CF1A /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1755391C2A5861770052CF1A /* FeedCache.swift */; };
@@ -59,7 +58,6 @@
 		1780E7A429B90D2700861CD4 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFEC62891B517006E4CB5 /* FeedLoader.swift */; };
 		1780E7A529B90D2700861CD4 /* FeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DFEC42891B47E006E4CB5 /* FeedImage.swift */; };
 		1780E7A629B90D2B00861CD4 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC363E29842A1D007720EB /* RemoteFeedItem.swift */; };
-		1780E7A729B90D2B00861CD4 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */; };
 		1780E7A829B90D2B00861CD4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D45EB289D6A9C001AAC96 /* HTTPClient.swift */; };
 		1780E7A929B90D2B00861CD4 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CDEC82970AFFA00D74391 /* URLSessionHTTPClient.swift */; };
 		1780E7AA29B90D2B00861CD4 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D45ED289D6AD7001AAC96 /* FeedItemsMapper.swift */; };
@@ -167,7 +165,6 @@
 		174145A829B508CC00C53533 /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
 		174145A929B50CDB00C53533 /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
 		174145AB29B50D2D00C53533 /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
-		174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		174D45EB289D6A9C001AAC96 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		174D45ED289D6AD7001AAC96 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		174D45F0289D888C001AAC96 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
@@ -183,7 +180,6 @@
 		174E69ED2A30D9FC00C9A501 /* FeedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLocalizationTests.swift; sourceTree = "<group>"; };
 		175109A52A69C1FD008A89B3 /* LoadImageCommentsFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageCommentsFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapper.swift; sourceTree = "<group>"; };
-		175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageCommentsLoader.swift; sourceTree = "<group>"; };
 		175109AC2A69C553008A89B3 /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
 		1753C0872A1FF42500CC9CFB /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
 		1755391C2A5861770052CF1A /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
@@ -341,7 +337,6 @@
 			isa = PBXGroup;
 			children = (
 				17DC363E29842A1D007720EB /* RemoteFeedItem.swift */,
-				174D459E289977A3001AAC96 /* RemoteFeedLoader.swift */,
 				174D45ED289D6AD7001AAC96 /* FeedItemsMapper.swift */,
 				171704772A43442D005E1904 /* RemoteFeedImageDataLoader.swift */,
 				171704792A4349E3005E1904 /* Helpers */,
@@ -430,7 +425,6 @@
 		175109B42A69C912008A89B3 /* Image Comments API */ = {
 			isa = PBXGroup;
 			children = (
-				175109A92A69C274008A89B3 /* RemoteImageCommentsLoader.swift */,
 				175109A72A69C24F008A89B3 /* ImageCommentsMapper.swift */,
 			);
 			path = "Image Comments API";
@@ -976,7 +970,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1780E7B629B90D4300861CD4 /* CoreDataFeedStore.swift in Sources */,
-				1780E7A729B90D2B00861CD4 /* RemoteFeedLoader.swift in Sources */,
 				175109A82A69C24F008A89B3 /* ImageCommentsMapper.swift in Sources */,
 				1780E7A829B90D2B00861CD4 /* HTTPClient.swift in Sources */,
 				17B5B01D2A70088D000E4DDA /* RemoteLoader.swift in Sources */,
@@ -1002,7 +995,6 @@
 				1780E7B529B90D4300861CD4 /* ManagedFeedImage.swift in Sources */,
 				1780E7A929B90D2B00861CD4 /* URLSessionHTTPClient.swift in Sources */,
 				173042972A40B7680017DC9E /* FeedErrorViewModel.swift in Sources */,
-				175109AA2A69C274008A89B3 /* RemoteImageCommentsLoader.swift in Sources */,
 				171704712A41FDF5005E1904 /* FeedImageDataLoader.swift in Sources */,
 				173042952A40B7510017DC9E /* FeedLoadingViewModel.swift in Sources */,
 				174D46462A43516800A7C0BB /* LocalFeedImageDataLoader.swift in Sources */,
