@@ -11,7 +11,7 @@ import FeedComponents
 class FeedImagePresenterTests: XCTestCase {
     
     func test_map_createsViewModel() {
-        let image = uniqueFeedImage()
+        let image = uniqueImage()
         
         let viewModel = FeedImagePresenter.map(image)
         

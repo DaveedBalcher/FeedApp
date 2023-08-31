@@ -80,7 +80,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
         var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
         
         var recievedResults = [Error?]()
-        sut?.save([uniqueFeedImage()]) { recievedResults.append($0 as? Error) }
+        sut?.save([uniqueImage()]) { recievedResults.append($0 as? Error) }
         
         sut = nil
         store.completeDeletion(with: anyNSError())
@@ -93,7 +93,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
         var sut: LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
         
         var receivedResults = [Error?]()
-        sut?.save([uniqueFeedImage()]) { receivedResults.append($0 as? Error) }
+        sut?.save([uniqueImage()]) { receivedResults.append($0 as? Error) }
         
         store.completeDeletionSuccessfully()
         sut = nil
