@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		173C3A0F2A964B9800F5F014 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3A0E2A964B9800F5F014 /* CommentsUIIntegrationTests.swift */; };
 		173C3A112A964E7F00F5F014 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3A102A964E7F00F5F014 /* CommentsUIComposer.swift */; };
+		173C3A8B2AA8B31500F5F014 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3A8A2AA8B31500F5F014 /* NullStore.swift */; };
 		175538B92A5706070052CF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175538B82A5706070052CF1A /* AppDelegate.swift */; };
 		175538BB2A5706070052CF1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175538BA2A5706070052CF1A /* SceneDelegate.swift */; };
 		175538C22A5706080052CF1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175538C12A5706080052CF1A /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		173C3A0E2A964B9800F5F014 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		173C3A102A964E7F00F5F014 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
+		173C3A8A2AA8B31500F5F014 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		175538B52A5706070052CF1A /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		175538B82A5706070052CF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		175538BA2A5706070052CF1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				175538B82A5706070052CF1A /* AppDelegate.swift */,
 				175538BA2A5706070052CF1A /* SceneDelegate.swift */,
 				17DB1A502A6987FE0038DD3F /* CombineHelpers.swift */,
+				173C3A8A2AA8B31500F5F014 /* NullStore.swift */,
 				1755395D2A5D9D9C0052CF1A /* Composers */,
 				175538C12A5706080052CF1A /* Assets.xcassets */,
 				175538C32A5706080052CF1A /* LaunchScreen.storyboard */,
@@ -307,6 +310,7 @@
 				1755395F2A5D9DBA0052CF1A /* FeedUIComposer.swift in Sources */,
 				175538B92A5706070052CF1A /* AppDelegate.swift in Sources */,
 				1755395E2A5D9DBA0052CF1A /* LoadResourcePresentationAdapter.swift in Sources */,
+				173C3A8B2AA8B31500F5F014 /* NullStore.swift in Sources */,
 				175539622A5D9DBA0052CF1A /* WeakRefVirtualProxy.swift in Sources */,
 				175538BB2A5706070052CF1A /* SceneDelegate.swift in Sources */,
 				175539632A5D9DBA0052CF1A /* FeedViewAdapter.swift in Sources */,
