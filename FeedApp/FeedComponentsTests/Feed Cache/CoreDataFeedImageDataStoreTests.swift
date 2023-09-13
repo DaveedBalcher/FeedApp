@@ -50,28 +50,28 @@ class CoreDataFeedImageDataStoreTests: XCTestCase {
 
     // - MARK: Helpers
     
-    private func makeSUT(file: StaticString = #file, line: UInt = #line) -> CoreDataFeedStore {
+    private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> CoreDataFeedStore {
         let storeURL = URL(fileURLWithPath: "/dev/null")
         let sut = try! CoreDataFeedStore(storeURL: storeURL)
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
     
-    private func notFound() -> FeedImageDataStore.RetrievalResult {
+    private func notFound() -> Result<Data?, Error> {
         return .success(.none)
     }
     
-    private func found(_ data: Data) -> FeedImageDataStore.RetrievalResult {
+    private func found(_ data: Data) -> Result<Data?, Error> {
         return .success(data)
     }
     
     private func localImage(url: URL) -> LocalFeedImage {
         return LocalFeedImage(id: UUID(), description: "any", location: "any", url: url)
     }
-
-    private func expect(_ sut: CoreDataFeedStore, toCompleteRetrievalWith expectedResult: FeedImageDataStore.RetrievalResult, for url: URL,  file: StaticString = #filePath, line: UInt = #line) {
+    
+    private func expect(_ sut: CoreDataFeedStore, toCompleteRetrievalWith expectedResult: Result<Data?, Error>, for url: URL,  file: StaticString = #filePath, line: UInt = #line) {
         let receivedResult = Result { try sut.retrieve(dataForURL: url) }
-        
+
         switch (receivedResult, expectedResult) {
         case let (.success( receivedData), .success(expectedData)):
             XCTAssertEqual(receivedData, expectedData, file: file, line: line)
@@ -99,4 +99,5 @@ class CoreDataFeedImageDataStoreTests: XCTestCase {
             XCTFail("Failed to insert \(data) with error \(error)", file: file, line: line)
         }
     }
+    
 }
