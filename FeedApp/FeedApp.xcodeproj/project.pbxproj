@@ -49,6 +49,11 @@
 		175539282A58656C0052CF1A /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175539272A58656C0052CF1A /* FeedImageDataCache.swift */; };
 		1755393A2A5B4AB30052CF1A /* FeedComponentsAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CDED02970B2CA00D74391 /* FeedComponentsAPIEndToEndTests.swift */; };
 		1755393F2A5B59820052CF1A /* FeedComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1780E78729B90C3C00861CD4 /* FeedComponents.framework */; };
+		176342752AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 176342702AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_dark.png */; };
+		176342762AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 176342712AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light.png */; };
+		176342772AC4A300000EE7AB /* EMPTY_LIST_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 176342722AC4A300000EE7AB /* EMPTY_LIST_light.png */; };
+		176342782AC4A300000EE7AB /* EMPTY_LIST_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 176342732AC4A300000EE7AB /* EMPTY_LIST_dark.png */; };
+		176342792AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 176342742AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */; };
 		176E03E829F99D19002AF6CB /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E03E729F99D19002AF6CB /* UIView+Shimmering.swift */; };
 		176E040329FAE330002AF6CB /* FeedImageCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E040229FAE330002AF6CB /* FeedImageCellController.swift */; };
 		1772CA232A8D0FB8009B8202 /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178A12982A8D0BD800D8300B /* ImageComments.storyboard */; };
@@ -220,6 +225,11 @@
 		175DFEA22891B459006E4CB5 /* FeedApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FeedApp.entitlements; sourceTree = "<group>"; };
 		175DFEC42891B47E006E4CB5 /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		175DFED828995F15006E4CB5 /* FeedItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapperTests.swift; sourceTree = "<group>"; };
+		176342702AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_dark.png; sourceTree = "<group>"; };
+		176342712AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_light.png; sourceTree = "<group>"; };
+		176342722AC4A300000EE7AB /* EMPTY_LIST_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_light.png; sourceTree = "<group>"; };
+		176342732AC4A300000EE7AB /* EMPTY_LIST_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMPTY_LIST_dark.png; sourceTree = "<group>"; };
+		176342742AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
 		176E03E729F99D19002AF6CB /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		176E03FE29FADF16002AF6CB /* FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoader.swift; sourceTree = "<group>"; };
 		176E040229FAE330002AF6CB /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
@@ -777,6 +787,11 @@
 		178A12872A8D055B00D8300B /* Snapshots */ = {
 			isa = PBXGroup;
 			children = (
+				176342732AC4A300000EE7AB /* EMPTY_LIST_dark.png */,
+				176342722AC4A300000EE7AB /* EMPTY_LIST_light.png */,
+				176342702AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_dark.png */,
+				176342742AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png */,
+				176342712AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light.png */,
 			);
 			path = Snapshots;
 			sourceTree = "<group>";
@@ -1087,8 +1102,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				176342772AC4A300000EE7AB /* EMPTY_LIST_light.png in Resources */,
+				176342782AC4A300000EE7AB /* EMPTY_LIST_dark.png in Resources */,
+				176342792AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light_extraExtraExtraLarge.png in Resources */,
+				176342752AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */,
 				1717160C2AB3786700802F58 /* IMAGE_COMMENTS_light_extraExtraExtraLarge.png in Resources */,
 				1717160B2AB3786700802F58 /* IMAGE_COMMENTS_light.png in Resources */,
+				176342762AC4A300000EE7AB /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */,
 				1717160A2AB3786700802F58 /* IMAGE_COMMENTS_dark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
